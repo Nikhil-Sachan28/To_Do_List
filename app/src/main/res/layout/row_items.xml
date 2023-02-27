@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/imageView_cross"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:id="@+id/checkbox_item_is_done"
+
+                android:layout_width="50dp"
+
+                android:layout_height="71dp" />
+
+            <TextView
+                android:id="@+id/textView_item_text"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/checkbox_item_is_done"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toRightOf="@+id/checkbox_item_is_done"
+                android:padding="10dp"
+                android:text="hello World"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_cross"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="-37dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/textView_item_text"
+                app:srcCompat="@android:drawable/btn_dialog" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
